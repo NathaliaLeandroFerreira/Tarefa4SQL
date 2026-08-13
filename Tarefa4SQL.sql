@@ -50,3 +50,17 @@ from Artista left join Servico on Artista.idA = Servico.idAE group by Artista.no
 select Artista.nome,Cliente.nomeC,Servico.titulo,Servico.preco,Servico.statusConclusao
 from Artista join Servico on Artista.idA = Servico.idAE join Cliente on Servico.idCE = Cliente.idC;
 
+/* ultilizando espaço seguro de manipulação (mudanças temporarias)*/
+select * from Servico;
+
+start transaction;
+
+update Servico set preco = preco*1.10;
+
+select * from Servico;
+
+rollback;
+
+select * from Servico; 
+
+
