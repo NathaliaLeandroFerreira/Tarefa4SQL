@@ -1,5 +1,6 @@
 # Tarefa4SQL
-adicionando comandos como alter table(para modificar tabelas já criadas),delete e ambiente seguro de modificação
+
+Adicionando comandos como ALTER TABLE (para modificar tabelas já criadas), DELETE e ambiente seguro de modificações temporárias (START TRANSACTION, ROLLBACK).
 mer inicial:
 ![IMAGEMINICIALMER](tarefa3Inicio.PNG)
 mer final:
